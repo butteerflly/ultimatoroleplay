@@ -10,3 +10,5 @@ fiveup e fiveuplogs
  4. Após a importação bem-sucedida, edite os dados para conectar o servidor ao banco de dados MySQL no arquivo:
 server\dotnet\resources\NeptuneEvoSDK\MySQL.cs
 
+ 5. A última etapa é compilar o projeto no programa - Visual Studio
+
