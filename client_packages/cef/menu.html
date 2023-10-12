@@ -1,0 +1,1005 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FiveUP - Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            font-family: "Ubuntu", sans-serif;
+            margin: 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #555;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ddd;
+        }
+    </style>
+	  <style>
+		[v-cloak] {
+			display: none;
+		}
+	</style>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/fmenu.css">
+    <link rel="stylesheet" href="css/auto.css">
+	<link rel="stylesheet" href="css/air.css">
+    <link rel="stylesheet" href="css/weapons.css">
+    <link rel="stylesheet" href="css/clothes.css">
+	<link rel="stylesheet" href="css/premclothes.css">
+    <link rel="stylesheet" href="css/masks.css">
+    <link rel="stylesheet" href="fonts/icons.css">
+	<link rel="stylesheet" href="css/biznes.css">
+	<link rel="stylesheet" href="css/allstyle.css">
+	<link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/color.css">
+    <script src="js/vue.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
+</head>
+	<body v-cloak style="display: none;">
+    <div class="dial">
+	<div class="help">
+	<p>Проворачивайте колесо &#8678; и &#8680; до того момента пока оно не начнёт трястись. </p>
+	<p>После чего нажмите Enter чтобы вскрыть замок.</p>
+	<p>Всего нужно вскрыть 3 замка для удачного ограбления.</p>
+	</div>
+	
+        <div class="img base"></div>
+        <div class="img num"></div>
+    </div>
+    <div class="stock" style="display:block" v-if="active">
+	
+		<h1>Склад</h1><div id="exit" class="exit" v-on:click="hide()"><i class="fas fa-times"></i></div>
+		
+		<div class="obl">
+			<div class="cash"><div class="title"><label>Деньги</label></div><div class="count"><span>{{count[0]}}</span> $</div><div id="take" class="btn" v-on:click="take(0)">Взять</div><div id="put" class="btn" v-on:click="put(0)">Положить</div></div>
+			<div class="healkit"><div class="title"><label>Аптечка</label></div><div class="count"><span>{{count[1]}}</span> шт.</div><div id="take" class="btn" v-on:click="take(1)">Взять</div><div id="put" class="btn" v-on:click="put(1)">Положить</div></div>
+			<div class="weed"><div class="title"><label>Наркотики</label></div><div class="count"><span>{{count[2]}}</span> шт.</div><div id="take" class="btn" v-on:click="take(2)">Взять</div><div id="put" class="btn" v-on:click="put(2)">Положить</div></div>
+			<div class="weapons"><div class="title"><label>Оружейные материалы</label></div><div class="count"><span>{{count[3]}}</span> шт.</div><div id="take" class="btn" v-on:click="take(3)">Взять</div><div id="put" class="btn" v-on:click="put(3)">Положить</div></div>
+			<div class="armor"><div class="title"><label>Бронежилеты</label></div><div class="count"><span>{{count[4]}}</span> шт.</div><div id="take" class="btn" v-on:click="take(5)">Взять</div><div id="put" class="btn" v-on:click="put(5)">Положить</div></div>
+			<div class="koks"><div class="title"><label>Листья коки</label></div><div class="count"><span>{{count[5]}}</span> шт.</div><div id="take" class="btn" v-on:click="take(6)">Взять</div><div id="put" class="btn" v-on:click="put(6)">Положить</div></div>
+			<div class="weaponsstock"><div class="title"><label>Оружейный склад</label></div><div class="count"><span></span></div><div id="take" class="btn" v-on:click="take(4)">Открыть</div></div>
+		</div>
+    </div>
+    <div class="pc">
+	<h1>База LSPD</h1>
+        <div class="screen">
+            <div class="left">
+                <menu>
+                    <li id="2">Пробить номера</li>
+                    <li id="3">Пробить по базе</li>
+                    <li id="4">В розыске</li>
+					<li id="1">Очистить розыск</li>
+                    <li id="5" class="exit"><i class="fas fa-times"></i></li>
+                </menu>
+            </div>
+            <div class="right"><h1></h1><div class="elements"></div></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+
+	<div class="license" v-if="active">
+        <img src="images/docs/back.svg" alt="" class="passport__pic1">
+        <img src="images/docs/male.png" alt="" class="passport__pic2">
+        <img src="images/docs/gerb.svg" alt="" class="passport__pic3">
+        <img src="images/docs/podp.svg" alt="" class="passport__pic4">
+        <img src="images/docs/usa2.png" alt="" class="passport__pic5">
+        <img src="images/docs/usa.png" alt="" class="passport__pic6">
+        <p class="passport__title">LOS SANTOS PENITENTIARY</p>
+        <p class="passport__subtitle">SAN ANDREAS: <span class="passport__id"> LICENSE ID</span></p>
+        <p class="passport__p"><span class="passport__p-l">Дата въезда:</span> <span class="passport__p-r" id="data_register">{{date}}</span> </p>
+        <p class="passport__p"><span class="passport__p-l">Имя:</span> <span class="passport__p-r" id="name">{{firstname}}</span></p>
+        <p class="passport__p"><span class="passport__p-l">Фамилия:</span> <span class="passport__p-r" id="second_name">{{lastname}}</span></p>
+		<p class="passport__p"> <span class="passport__p-l">Пол:</span> <span class="passport__p-r" id="job">{{gender}}</span></p>
+		<p class="passport__p"><span class="passport__p-l">Список лицензий:</span> <span class="passport__p-r" id="second_name">{{lics}}</span></p>
+        <button id="exit" @click="hide" class="passport__close"><img src="images/docs/close.svg" alt="Закрыть"></button>
+    </div>
+	<div class="passport" v-if="active">
+        <img src="images/docs/back.svg" alt="" class="passport__pic1">
+        <img src="images/docs/male.png" alt="" class="passport__pic2">
+        <img src="images/docs/gerb.svg" alt="" class="passport__pic3">
+        <img src="images/docs/podp.svg" alt="" class="passport__pic4">
+        <img src="images/docs/usa2.png" alt="" class="passport__pic5">
+        <img src="images/docs/usa.png" alt="" class="passport__pic6">
+        <p class="passport__title">LOS SANTOS PENITENTIARY</p>
+        <p class="passport__subtitle">SAN ANDREAS: <span class="passport__id"> PASSPORT ID</span></p>
+        <p class="passport__p"><span class="passport__p-l">Дата въезда:</span> <span class="passport__p-r" id="data_register">{{date}}</span> </p>
+        <p class="passport__p"><span class="passport__p-l">Имя:</span> <span class="passport__p-r" id="name">{{firstname}}</span></p>
+        <p class="passport__p"><span class="passport__p-l">Фамилия:</span> <span class="passport__p-r" id="second_name">{{lastname}}</span></p>
+        <p class="passport__p"> <span class="passport__p-l">Пол:</span> <span class="passport__p-r" id="job">{{gender}}</span></p>
+        <p class="passport__num">{{number}}</p>
+        <button id="exit" @click="hide" class="passport__close"><img src="images/docs/close.svg" alt="Закрыть"></button>
+    </div>
+	<div class="plastic" v-if="active">
+        <img src="images/docs/back.svg" alt="" class="passport__pic1">
+        <img src="images/docs/male.png" alt="" class="passport__pic2">
+        <img src="images/docs/gerb.svg" alt="" class="passport__pic3">
+        <img src="images/docs/podp.svg" alt="" class="passport__pic4">
+        <img src="images/docs/usa2.png" alt="" class="passport__pic5">
+        <img src="images/docs/usa.png" alt="" class="passport__pic6">
+        <p class="passport__title">LOS SANTOS PENITENTIARY</p>
+        <p class="passport__subtitle">SAN ANDREAS: <span class="passport__id"> AUTO ID</span></p>
+        <p class="passport__p"><span class="passport__p-l">Название автомобиля:</span><br><span class="passport__p-r" id="data_register">{{nameauto}}</span> </p>
+        <p class="passport__p"><span class="passport__p-l">Владелец:</span> <span class="passport__p-r" id="name">{{firstname}}</span></p>
+        <p class="passport__p"><span class="passport__p-l">Поставлено на учёт:</span> <span class="passport__p-r" id="second_name">{{dateregauto}}</span></p>
+        <p class="passport__num">{{numberauto}}</p>
+        <button id="exit" @click="hide" class="passport__close"><img src="images/docs/close.svg" alt="Закрыть"></button>
+    </div>
+
+	
+	<!--удостоверения -->
+	<div class="ydovgov" v-if="active">
+        <p id="number">{{number}}</p>
+        <p id="firstname">{{firstname}}</p>
+        <p id="lastname">{{lastname}}</p>
+        <p id="date">{{date}}</p>
+        <p id="gender">{{gender}}</p>
+        <p id="member">{{member}}</p>
+        <div id="exit" @click="hide"></div>
+    </div>
+	<div class="ydovpolice" v-if="active">
+        <p id="number">{{number}}</p>
+        <p id="firstname">{{firstname}}</p>
+        <p id="lastname">{{lastname}}</p>
+        <p id="date">{{date}}</p>
+        <p id="gender">{{gender}}</p>
+        <p id="member">{{member}}</p>
+        <div id="exit" @click="hide"></div>
+    </div>
+	<div class="ydovems" v-if="active">
+        <p id="number">{{number}}</p>
+        <p id="firstname">{{firstname}}</p>
+        <p id="lastname">{{lastname}}</p>
+        <p id="date">{{date}}</p>
+        <p id="gender">{{gender}}</p>
+        <p id="member">{{member}}</p>
+        <div id="exit" @click="hide"></div>
+    </div>
+	<div class="ydovfib" v-if="active">
+        <p id="number">{{number}}</p>
+        <p id="firstname">{{firstname}}</p>
+        <p id="lastname">{{lastname}}</p>
+        <p id="date">{{date}}</p>
+        <p id="gender">{{gender}}</p>
+        <p id="member">{{member}}</p>
+        <div id="exit" @click="hide"></div>
+    </div>
+	<div class="ydovarmy" v-if="active">
+        <p id="number">{{number}}</p>
+        <p id="firstname">{{firstname}}</p>
+        <p id="lastname">{{lastname}}</p>
+        <p id="date">{{date}}</p>
+        <p id="gender">{{gender}}</p>
+        <p id="member">{{member}}</p>
+        <div id="exit" @click="hide"></div>
+    </div>
+	<div class="ydovnews" v-if="active">
+        <p id="number">{{number}}</p>
+        <p id="firstname">{{firstname}}</p>
+        <p id="lastname">{{lastname}}</p>
+        <p id="date">{{date}}</p>
+        <p id="gender">{{gender}}</p>
+        <p id="member">{{member}}</p>
+        <div id="exit" @click="hide"></div>
+    </div>
+	<div class="ydovmws" v-if="active">
+        <p id="number">{{number}}</p>
+        <p id="firstname">{{firstname}}</p>
+        <p id="lastname">{{lastname}}</p>
+        <p id="date">{{date}}</p>
+        <p id="gender">{{gender}}</p>
+        <p id="member">{{member}}</p>
+        <div id="exit" @click="hide"></div>
+    </div>
+	<div class="ydovgr6" v-if="active">
+        <p id="number">{{number}}</p>
+        <p id="firstname">{{firstname}}</p>
+        <p id="lastname">{{lastname}}</p>
+        <p id="date">{{date}}</p>
+        <p id="gender">{{gender}}</p>
+        <p id="member">{{member}}</p>
+        <div id="exit" @click="hide"></div>
+    </div>
+	<!--удостоверения -->
+	
+    <div class="dialog" v-if="active">
+        <div class="field_ques">
+            <div class="question">
+                <p>{{title}}</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="yes" @click="yes"><p>Да</p></button>
+            <button class="no" @click="no"><p>Нет</p></button>
+        </div>
+    </div>
+    <div class="input" v-if="active">
+        <p>{{title}}</p>
+        <div>
+            <textarea :placeholder="plholder" :maxlength="len" v-model="input"></textarea>
+            <button @click="send">Подтвердить/Отменить</button>
+        </div>
+    </div>
+    <div class="menu">
+		<h1>Label</h1>
+		<!--div class="money"><span>100 000 $</span><p>cредств на руках</p></div-->
+		<div class="elements">
+
+		</div>
+			<div class="buttons">
+			<div id="btn1" class="btn exit" style="display:none"><i class="fas fa-times"></i></div>
+			<div id="btn3" class="btn exit big" style="display:none;"><i class="fas fa-times"></i></div>
+		</div>		
+	</div>
+
+	
+	
+    <div class="atm" v-if="active">
+	
+	<div class="header">
+	<div class="no" @click="btn" id="-1">Х</div>
+	<div class="z"><img src="images/fleeca.svg"></div>
+	<div class="z"><h3>Банкомат</h3>
+	<p>У нас самые быстрые и надежные банкоматы.</p>
+	<p>Работают круглые сутки и расположены по всему штату.</p>
+	</div>
+	</div>
+	<div class="content">
+	   <div class="top">
+  			<div class="bank__number-score">Номер счета: <span>{{number}}</span></div>
+  			<div class="bank__balance">Баланс: <span>${{balance}}</span></div>
+	   </div>
+	   <div class="bank__buttons-block" v-if="type == 1">
+		<div class="sc">
+		<div @click="btn" id="0" class="block"><img src="images/log-in.svg" alt="">Внести средства</div>
+		<div @click="btn" id="1" class="block"><img src="images/log-out.svg" alt="">Вывести средства</div>
+		<div @click="btn" id="4" class="block"><img src="images/card.svg" alt="">Перевести средства</div>
+		</div>
+		<div class="sc">
+		<div @click="btn" id="2" class="block"><img src="images/house.svg" alt="">Оплатить дом</div>
+		<div @click="btn" id="3" class="block"><img src="images/case.svg" alt="">Оплатить бизнес</div>
+		<div @click="btn" id="5" class="block"><img src="images/case.svg" alt="">Оплатить компанию</div>
+		<div @click="btn" id="6" class="block"><img src="images/house.svg" alt="">Оплатить квартиру</div>
+		</div>    
+	   </div>
+	   
+	   <div class="bank__buttons-block" v-if="type == 2">
+		<div class="sc">
+		<p class="subinfo">{{subdata}}</p>
+		<input :placeholder="plholder" v-model="value" maxlength="9" placeholder="Укажите сумму...">
+		</div>
+		<div class="sc">
+		<div @click="next" id="next" class="block">Перевести</div>
+		<div @click="prev" id="prev" class="block">Отменить</div>
+		</div>    
+	   </div>
+	   
+	   <div class="bank__buttons-block vv" v-if="type == 3">
+		<div class="sc" v-for="dats in subdata">
+		<div @click="btnf(dats[1])" v-bind:id="dats[1]" class="block"><p v-bind:id="dats[1]">{{dats[0]}}</p></div>
+		</div>
+		<div class="sc">
+		<div @click="btn" id="-1" class="block">Назад</div>
+		</div>    
+	   </div>
+	   
+	   <div class="bank__buttons-block" v-if="type == 4">
+		<div class="sc">
+		<div @click="btn" id="0" class="block">Положить</div>
+		<div @click="btn" id="1" class="block">Снять</div>
+		<div @click="btn" id="-1" class="block">Назад</div>
+		</div>
+	   </div>
+	   
+	   <div class="bank__buttons-block" v-if="type == 5">
+		<div class="sc">
+		<div @click="btn" id="0" class="block">Положить</div>
+		<div @click="btn" id="1" class="block">Снять</div>
+		<div @click="btn" id="-1" class="block">Назад</div>
+		</div>
+	   </div>
+	   
+	   
+	</div>
+	
+
+    </div>
+	
+
+	
+	
+    <div class="lift" v-if="active">
+        <h1>{{ floors[floor] }}</h1>
+        <div id="btn-down" @click="down"></div>
+        <div id="btn-up" @click="up"></div>
+        <div id="btn-stop" @click="stop"></div>
+        <div id="btn-start" @click="start"></div>
+    </div>
+    <div class="petrol" v-if="active">
+	<div class="header">
+	<div class="no" @click="no">Х</div>
+	<div class="z"><img src="images/lazc.png"></div>
+	<div class="z"><h3>АЗС</h3>
+	<p>Лидер среди независимых автозаправочных станций.</p>
+	<p>Топливо высшего пятого экологического класса.</p>
+	</div>
+	</div>
+	<div class="content">
+       <div class="obem" @click="sel(0)" > 
+	   <div class="yk" >Указать объём</div>
+	   </div>
+	   
+   
+	   <div class="full" @click="sel(1)">Полный бак</div>
+	   <div class="gov" @click="sel(2)">Гос. транспорт</div>
+	   <div id="content" v-if="select == 0">
+	   	   <input placeholder="Кол-во литров" maxlength="3" v-model.number="input" onkeyup="this.value = this.value.replace (/[^0-9+]/, '')">
+	   </div>
+	   <div class="oks">
+	   <p class="gg" v-if="select == -1">Сумма к оплате: <span>0 $</span></p>
+	   <p class="gg" v-if="select == 1">Сумма к оплате: <span>{{price * fuel}} $</span></p>
+	   <p class="gg" v-if="select == 0">Сумма к оплате: <span>{{input * price}} $</span></p>
+	   <p class="gg" v-if="select == 2">Сумма к оплате: <span>за счёт государства</span></p>
+	   <p class="gg">Наличными <input type="checkbox" name="nal" v-model="nall"></p>
+	   <p class="gg">Картой <input type="checkbox" name="cart" v-model="card"></p>
+	   <div class="gg"><div class="yes" @click="buy">Оплатить</div></div>
+	   </div>
+	</div>	
+    </div>
+
+
+    <div class="fmenu" v-if="active">
+	<div class="head">
+	<h2>Фракционный планшет</h2> <div class="name">{{name}}</div><div @click="btn(0,$event)" class="vixod">Выйти</div><div class="online">Online: {{oncounter}} <span>/ {{counter}}</span></div>
+	</div>
+	<div class="con">
+	<div class="menue">
+	<a @click="btn(1,$event)" class="btn" v-bind:class="{active: btnactive[1]}">Члены организации</a>
+	<a @click="btn(2,$event)" class="btn" v-bind:class="{active: btnactive[2]}">Принять в организацию</a>
+	<!--a @click="btn(3,$event)" class="btn" v-bind:class="{active: btnactive[3]}">Транспорт организации</a-->
+	<a @click="btn(3,$event)" class="btn" v-bind:class="{active: btnactive[3]}">Отчёты по действиям</a>
+	<a @click="btn(7,$event)" class="btn" v-bind:class="{active: btnactive[7]}">Редактирование рангов</a>
+	</div>
+	</div>
+	<div class="content" v-show="submenu">
+	<div v-if="menu == 7" class="active">
+		<div @click="save" class="btn-submit">Сохранить ранги</div>
+		<div v-for="(rank,index) in ranks" class="listranks">
+			<a>{{rank}} ({{index}})</a>
+			<input class="newinput" placeholder="Новый ранг" v-model="newranks[index]">
+		</div>
+	</div>
+	
+	<div v-if="menu == 1" class="active">
+	<div class="head" v-if="menu == 1" class="active">
+	<div class="q1"></div>
+	<div class="q2">ID</div>
+	<div class="q3">Имя и Фамилия</div>
+	<div class="q4">Рабочая смена</div>
+	<div class="q5">Ранг</div>
+	<div class="q6">Звание</div>
+	</div>
+	<div class="us">
+	<div class="user" v-for="member in members">
+	<div v-bind:class="[ member[0] ? 'online' : 'offline' ]"><span></span></div>
+	<div class="q2">{{member[1]}}</div>
+	<div class="q3">{{member[2]}}</div>
+	<div class="q4">{{member[3]}}</div>
+	<div class="q5">{{member[5]}}</div>
+	<div class="q6">{{member[6]}}</div>
+	<div class="bt" @click="btn(4,$event)" v-bind:class="{active: btnactive[5]}">Изменить ранг</div>
+	<div class="bt" v-on:click="yvol(member[2])" v-bind:class="{active: btnactive[3]}">Уволить</div>
+	</div>
+	</div>
+	</div>
+	<div v-if="menu == 2" class="priem">
+			<h1 v-if="menu > 1">{{header[menu]}}</h1>
+            <input placeholder="Имя_Фамилия или ID" v-model="input" v-if="menu > 1">
+            <input placeholder="Новый ранг" v-model="rank" v-if="menu > 3">
+            <div @click="submit" class="btn-submit" v-if="menu > 1">{{btntext[menu]}}</div>
+	</div>
+
+	<div v-if="menu == 4" class="priem">
+			<h1>Изменить ранг</h1>
+            <input placeholder="Имя_Фамилия или ID" v-model="input" style="margin-left: 20vh;">
+            <input placeholder="Новый ранг" v-model="rank" style="margin-left: 0;">
+            <div @click="submit" class="btn-submit" style="display: block;margin: 0 auto;">Применить</div>
+	</div>
+
+	<!--div v-if="menu == 3" class="frackcars">
+	<div class="car">
+	<div class="names"><b>NBD807SC</b> Mercedes-Benz G63 AMG 6x6 | Police</div>
+	<div class="bts">Отметить на GPS</div><div class="bts">Эвакуировать</div>
+	</div>
+	<div class="car">
+	<div class="names"><b>NBD807SC</b> Mercedes-Benz G63 AMG 6x6 | Police</div>
+	<div class="bts">Отметить на GPS</div><div class="bts">Эвакуировать</div>
+	</div>
+	<div class="car">
+	<div class="names"><b>NBD807SC</b> Mercedes-Benz G63 AMG 6x6 | Police</div>
+	<div class="bts">Отметить на GPS</div><div class="bts">Эвакуировать</div>
+	</div>
+
+	</div-->
+	
+	<div v-if="menu == 3" class="stocks">
+	<div class="head">
+	<div class="q2">Время</div>
+	<div class="q3">Действие</div>
+	</div>
+	<div class="us" >
+	<div class="user" v-for="log in logs">
+	<div class="q2"><b>{{log[0]}}</b> {{log[1]}}</div>
+	<div class="q3" v-if="log[5] != null"><b> {{log[2]}}</b> {{log[5]}} <span>{{log[3]}} x{{log[4]}}</span></div>
+	<div class="q3" v-else><b>{{log[2]}}</b> взял со склада <span>{{log[3]}} x{{log[4]}}</span></div>
+	
+	</div>
+	</div>
+	</div>
+	
+	</div>
+
+</div>
+
+ 
+        
+
+		
+
+	
+    <div class="joblist" v-if="active">
+        <div class="adaptive">
+            <div class="boxtop">
+                <div class="box">
+                    <div class="header">
+                        <div v-on:click="closeJobMenu()" class="arrow"></div>
+                        <p class="txtheader">Устроиться на работу</p>
+                    </div>
+                    <div class="workbox">
+						<div class="workboxes" v-bind:class="list[array - 1].class">
+                        <div class="inkoslvl"> <p class="textlvl">LVL</p><p class="textlvl2">{{list[array - 1].level}}</p></div>
+                        <div class="worktoptxt ">
+                            <p class="textboxwork">{{list[array - 1].name}}</p>
+                            <div class="jobstatus" v-if="list[array - 1].level <= level">
+                                <img class="workimg" src="images/joblist/padlock-unlock.svg" alt="">
+                                <p class="worktextopen">Доступно для трудоустройства</p>
+                            </div>
+                            <div class="jobstatus" v-else>
+                                <img class="workimg" src="images/joblist/lock.svg" alt="">
+                            <p class="worktextopen">Не доступно для трудоустройства</p>
+                        </div>
+						</div>
+							<div v-if="list[array - 1].level <= level">
+							<div v-if="list[array - 1].jobid == jobid">
+							<div class="buttongetsettledred" v-on:click="selectJob(-1)">
+								<p сlass="buttontxtgetsettled">Уволиться</p>
+							</div>
+							</div>
+								<div v-else>
+									<div class="buttongetsettled" v-on:click="selectJob(list[array - 1].jobid)">
+										<p сlass="buttontxtgetsettled">Устроиться</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="mats" v-if="active">
+        <div v-if="isMed">
+            <div class="btns">
+                <div @click="load(4)" class="btn-succ">ЗАГРУЗИТЬ</div>
+                <div @click="unload(4)" class="btn-cancel">ВЫГРУЗИТЬ</div>
+            </div>
+            <div class="img hkit"></div>
+        </div>
+        <div v-else>
+            <div v-if="isArmy">
+                <div class="btns">
+                    <div @click="load(1)" class="btn-succ">ЗАГРУЗИТЬ</div>
+                    <div @click="unload(1)" class="btn-cancel">ВЫГРУЗИТЬ</div>
+                </div>
+                <div class="img army"></div>
+            </div>
+            <div v-if="!isArmy">
+                <div class="btns">
+                    <div @click="load(2)" class="btn-succ">ЗАГРУЗИТЬ</div>
+                    <div @click="unload(2)" class="btn-cancel">ВЫГРУЗИТЬ</div>
+                </div>
+                <div class="img gang"></div>
+            </div>
+            <div v-if="!isArmy">
+                <div class="btns">
+                    <div @click="load(3)" class="btn-succ">ЗАГРУЗИТЬ</div>
+                    <div @click="unload(3)" class="btn-cancel">ВЫГРУЗИТЬ</div>
+                </div>
+                <div class="img weed"></div>
+            </div>
+        </div>
+    </div>
+    <div class="auto" v-if="active">
+        <div class="sidebars-container">
+            <div class="left-menu">
+                <div class="logo icon tire"></div>
+                <h3>{{leftMenuHeader}}</h3>
+                <!--div class="filters-panel">
+                    <div class="filters-panel__item">
+                        <div class="icon cost"></div>
+                    </div>
+                    <div class="filters-panel__item">
+                        <div class="icon speed"></div>
+                    </div>
+                    <div class="filters-panel__item">
+                        <div class="icon place"></div>
+                    </div>
+                </div-->
+
+                <div class="list">
+                    <div v-for="(modelItem, index) in models" @click="model(index)" class="list__item">
+                        <div class="description">{{getName(models[index])}}</div>
+                        <div class="description">
+                            {{prices[index]}} {{cur}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-menu">
+                <h2><div class="description">{{getName(models[indexM])}}</div></h2>
+                <div class="list">                  
+                    <div class="list__item">
+                        <div class="heading"><div class="icon speed"></div> Макс. скорость:</div>
+                        <div class="description">{{getSpeed(models[indexM])}} км/ч</div>
+                    </div>
+					<div class="list__item">
+                        <div class="heading"><div class="icon massa"></div> Вес транспорта:</div>
+                        <div class="description">{{getMass(models[indexM])}}</div>
+                    </div>
+                    <div class="list__item">
+                        <div class="heading"><div class="icon place"></div>Кол-во мест:</div>
+                        <div class="description">{{getSeats(models[indexM])}} чел.</div>
+                    </div>
+					<div class="list__item" v-if="getMat(models[indexM]) != 0">
+                        <div class="heading"><div class="icon massa"></div>Вместимость:</div>
+                        <div class="description">{{getMat(models[indexM])}} мат.</div>
+                    </div>
+					<div class="list__item">
+                        <div class="heading"><div class="icon cost"></div>Стоимость:</div>
+                        <div class="description">{{prices[indexM]}} {{cur}}</div>
+                    </div>
+                </div>
+				<div class="bottom-menu">
+			<div @click="testdrive" class="button green">Тест драйв</div>
+            <!--div @click="buy()" class="button green">Купить за {{prices[indexM]}} {{cur}}</div-->
+			 <div @click="buy()" class="button green">Купить</div>
+            <div @click="exit()" class="button red">Выйти</div>  
+				</div>
+            </div>
+			                <div class="colors-menu">
+                    <div @click="color(0)" class="colors-menu__item black"></div>
+                    <div @click="color(1)" class="colors-menu__item white"></div>
+                    <div @click="color(2)" class="colors-menu__item red"></div>
+                    <div @click="color(3)" class="colors-menu__item orange"></div>
+                    <div @click="color(4)" class="colors-menu__item yellow"></div>
+                    <div @click="color(5)" class="colors-menu__item green"></div>
+                    <div @click="color(6)" class="colors-menu__item sky"></div>
+                    <div @click="color(7)" class="colors-menu__item blue"></div>
+                    <div @click="color(8)" class="colors-menu__item violet"></div>
+					
+                </div>
+        </div>
+    </div>
+	<div class="air" v-if="active">
+        <div class="sidebars-container">
+            <div class="left-menu">
+                <h3>Воздушный транспорт</h3>
+                <div class="list">
+                    <div v-for="(modelItem, index) in models" @click="model(index)" class="list__item">
+                        <div class="description">{{getName(models[index])}}</div>
+                        <div class="description">{{prices[index]}} {{cur}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-menu">
+				<div class="bottom-menu">
+			 <div @click="buy()" class="button green">Купить</div>
+            <div @click="exit()" class="button red">Выйти</div>  
+				</div>
+            </div>
+			    <div class="colors-menu">
+                    <div @click="color(0)" class="colors-menu__item black"></div>
+                    <div @click="color(1)" class="colors-menu__item white"></div>
+                    <div @click="color(2)" class="colors-menu__item red"></div>
+                    <div @click="color(3)" class="colors-menu__item orange"></div>
+                    <div @click="color(4)" class="colors-menu__item yellow"></div>
+                    <div @click="color(5)" class="colors-menu__item green"></div>
+                    <div @click="color(6)" class="colors-menu__item sky"></div>
+                    <div @click="color(7)" class="colors-menu__item blue"></div>
+                    <div @click="color(8)" class="colors-menu__item violet"></div>	
+                </div>
+        </div>
+    </div>
+    <div class="bsearch" v-if="active">
+        <h2>Обыск</h2>
+        <div class="list">
+            <p>Имя Фамилия: {{ name }}</p>
+            <p>Оружие:</p>
+            <ul><li v-for="w in weapons">{{ w }}</li></ul>
+            <p>Предметы инвентаря:</p>
+            <ul><li v-for="i in items">{{ i }}</li></ul>
+        </div>
+        <div class="btns">
+            <div @click="btn(1)" class="btn">Лицензии</div>
+            <div @click="btn(2)" class="btn">Паспорт</div>
+			<div @click="btn(0)" class="btn-close">Отмена</div>
+        </div>
+    </div>
+	<div class="clothes" v-if="active">
+        <div class="left">
+			<div class="bg">
+				<h1 class="bg1">Магазин Одежды</h1>
+			</div>
+
+            <div @click="btn(0,$event)" class="icon hat" v-bind:class="{ active: btns[0] }"><img src="images/res/hat.png"><p>Шляпа</p></div>
+            <div @click="btn(1,$event)" class="icon jacket" v-bind:class="{ active: btns[1] }"><img src="images/res/jacket.png"><p>Верхняя одежда</p></div>
+            <div @click="btn(2,$event)" class="icon shirt" v-bind:class="{ active: btns[2] }"><img src="images/res/shirt.png"><p>Нижняя одежда</p></div>
+            <div @click="btn(3,$event)" class="icon pants" v-bind:class="{ active: btns[3] }"><img src="images/res/pants.png"><p>Штаны</p></div>
+            <div @click="btn(4,$event)" class="icon shoe" v-bind:class="{ active: btns[4] }"><img src="images/res/shoe.png"><p>Обувь</p></div>
+            <div @click="btn(5,$event)" class="icon gloves" v-bind:class="{ active: btns[5] }"><img src="images/res/gloves.png"><p>Перчатки</p></div>
+            <div @click="btn(6,$event)" class="icon watches" v-bind:class="{ active: btns[6] }"><img src="images/res/watches.png"><p>Часы и браслеты</p></div>
+            <div @click="btn(7,$event)" class="icon glasses" v-bind:class="{ active: btns[7] }"><img src="images/res/glasses.png"><p>Очки</p></div>
+            <div @click="btn(8,$event)" class="icon jewerly" v-bind:class="{ active: btns[8] }"><img src="images/res/jewerly.png"><p>Аксессуары</p></div>
+			<div @click="btn(9,$event)" class="icon jewerly" v-bind:class="{ active: btns[9] }"><img src="images/res/jewerly.png"><p>Рюкзаки и сумки</p></div>
+        </div>
+		        <div class="right">
+				<div @click="exit" class="btn exit"><i class="fas fa-times"></i></div>	
+            <div class="block">        
+                <div class="list1">Предмет:<span><i @click="left(0)" class="fas fa-chevron-left"></i><div>{{styles[indexS]}}</div><i @click="right(0)" class="fas fa-chevron-right"></i></span></div>                
+                <div class="list">Цвет:<span><i @click="left(1)" class="fas fa-chevron-left"></i><div>{{colors[indexC]}}</div><i @click="right(1)" class="fas fa-chevron-right"></i></span></div>
+                <p class="price">Цена: <span>{{prices[indexS]}} $</span></p>
+                <div @click="buy" class="btn buy">Купить</div>    				
+            </div>
+        </div>
+		<div class="hlpp">Используйте мышку для поворота персонажа.</div>
+    </div>
+	
+
+
+	
+    <div class="body" v-bind:class="{ tattoo: !isBarber, barber: isBarber }" v-if="active">
+        <div @click="close" class="exit"></div>
+        <div class="items" v-if="isBarber">
+            <!--Barber Shop-->
+            <bodylist id="hair" name="Прическа" color="true"></bodylist>
+            <bodylist id="beard" name="Борода" color="true"></bodylist>
+			<bodylist id="makeup" name="Мейкап"></bodylist>
+            <bodylist id="eyebrows" name="Брови" color="true"></bodylist>
+            <bodylist id="chesthair" name="Грудь" color="true"></bodylist>
+            <bodylist id="lenses" name="Линзы"></bodylist>
+            <bodylist id="lipstick" name="Помада" color="true"></bodylist>
+            <bodylist id="blush" name="Румянец" color="true"></bodylist>
+        </div>
+        <div class="items" v-if="!isBarber">
+            <!--Tattoo Shop-->
+            <bodylist id="torso" name="Торс"></bodylist>
+            <bodylist id="head" name="Голова"></bodylist>
+            <bodylist id="leftarm" name="Левая рука"></bodylist>
+            <bodylist id="rightarm" name="Правая рука"></bodylist>
+            <bodylist id="leftleg" name="Левая нога"></bodylist>
+            <bodylist id="rightleg" name="Правая нога"></bodylist>
+        </div>
+    </div>
+    <div class="weapons_buy" v-if="active">
+        <div class="left">
+            <div @click="btn(0,$event)" class="btn pistol" v-bind:class="{ active: btns[0] }"></div>
+            <div @click="btn(1,$event)" class="btn shot" v-bind:class="{ active: btns[1] }"></div>
+            <div @click="btn(2,$event)" class="btn smg" v-bind:class="{ active: btns[2] }"></div>
+            <div @click="btn(3,$event)" class="btn ammo" v-bind:class="{ active: btns[3] }"></div>
+        </div>
+        <div class="right">
+            <div class="head"></div>
+            <div class="elements">
+                <div class="block" v-for="(item, index) in items">
+                    <label>{{item[0]}}</label>
+					<div class="imm"></div>
+					<span>Цена {{item[1]}}$</span>
+                    <div @click="buy(index)" class="btn">Купить</div>
+                    
+                </div>
+                <div class="slider" v-for="(item, index) in sliders">
+                    <label>{{item[0]}}</label>
+                    <span>Кол-во <input :id="index" @input="range" type="text" :value="item[1]" step="1" :min="item[1]" :max="item[2]"> штук</span>
+                    <span>Купить за <output @click="rangebuy" :id="'wbuyslider' + index">{{item[4]}}$</output> </span>
+                </div>
+            </div>
+            <div class="buttons">
+			<div @click="btn(0,$event)" class="btn pistol" v-bind:class="{ active: btns[0] }"></div>
+            <div @click="btn(1,$event)" class="btn shot" v-bind:class="{ active: btns[1] }"></div>
+            <div @click="btn(2,$event)" class="btn smg" v-bind:class="{ active: btns[2] }"></div>
+            <div @click="btn(3,$event)" class="btn ammo" v-bind:class="{ active: btns[3] }"></div>
+                <div @click="exit" class="exit">Выход</div>
+            </div>
+        </div>
+
+    </div>
+	
+
+
+    <div class="weapons_craft" v-if="active">
+	<h1>Крафт оружия</h1>
+	<div @click="exit" class="exit"><i class="fas fa-times"></i></div>
+        <div class="left">
+            <div @click="btn(0,$event)" class="btn pistol" v-bind:class="{ active: btns[0] }">Оружие</div>
+            <!--div @click="btn(1,$event)" class="btn shot" v-bind:class="{ active: btns[1] }"></div>
+            <div @click="btn(2,$event)" class="btn smg" v-bind:class="{ active: btns[2] }"></div>
+            <div @click="btn(3,$event)" class="btn rifles" v-bind:class="{ active: btns[3] }"></div-->
+            <div @click="btn(4,$event)" class="btn ammo" v-bind:class="{ active: btns[4] }">Патроны</div>
+        </div>
+        <div class="right">
+            <div class="head"></div>
+            <div class="elements">
+                <div class="block" v-for="(item, index) in items">
+                    <label>{{item[0]}}</label>
+                    <div @click="buy(index)" class="btn">Создать</div>
+                    <span>{{item[1]}}M</span>
+                </div>
+                <div class="slider" v-for="(item, index) in sliders">
+                    <label>{{item[0]}}</label>
+                    <input :id="index" @input="range" type="range" :value="item[1]" step="1" :min="item[1]" :max="item[2]">
+                    <output @click="rangebuy" :id="'wcraftslider' + index">{{item[4]}}M</output>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="masks" v-if="active">
+        <div class="right">
+            <div class="head">
+                <h1>Лавка масок</h1>
+                <div @click="exit" class="menuexit"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="bbl">
+                <table>
+                    <thead><tr><th>№</th><th>Цена</th></tr></thead>
+				</table>
+				<table class="ow">
+                    <tbody>
+                        <tr v-for="(value, index) in styles" v-on:click="masks(index)" v-bind:class="{fiveup: index == indexS}" :key="index">
+                            <td><div class="back alignleft">{{styles[index]}}</div></td>
+                            <td><div class="back">{{prices[index]}}$</div></td>
+    				    </tr>
+                    </tbody>
+                </table>
+            </div>
+				<div class="list">Цвет:<span><i @click="left(1)" class="fas fa-chevron-left"></i><div>{{colors[indexC]}}</div><i @click="right(1)" class="fas fa-chevron-right"></i></span></div>
+                <p class="price">Цена: <span>{{prices[indexS]}} $</span></p>
+                <div @click="buy" class="btn buy">Купить</div>    				
+				
+				
+				<!--div class="list"><span><i @click="left(1)" class="bolder fiveup"><</i><div>{{colors[indexC]}}</div><i @click="right(1)" class="bolder fiveup">></i></div>
+                <div @click="buy" class="buy">Купить за {{prices[indexS]}}$</div-->
+        </div>
+        <div class="left">
+            <div @click="btn(0,$event)" class="icon mask" v-bind:class="{ active: btns[0] }"></div>
+        </div>
+    </div>
+	
+
+	<div class="petshop" v-if="active">
+        <h1>Питомцы</h1>
+		<div @click="exit" class="btn exit"><i class="fas fa-times"></i></div>
+		
+		<div class="items block">        
+                <div class="list">Выберите питомца:<span><i @click="left(0)" class="fas fa-chevron-left"></i><div>{{models[indexM]}}</div><i @click="right(0)" class="fas fa-chevron-right"></i></span></div>                
+                <p class="price">Цена: <span>{{prices[indexM]}} $</span></p>
+                <div @click="buy" class="btn buy">Купить</div>    				
+            </div>
+
+    </div>
+
+
+	
+    <div class="infobox" v-if="active">
+        <div class="header"><i class="cancel" @click="exit"></i><h1>{{header}}</h1></div>
+        <div class="content" v-html="content"></div>
+    </div>
+	
+	
+	<div class="houses HouseMenu" v-if="active">
+<!--div class="head"></div-->
+<div class="body">
+<div class="left">
+<div class="houseblock q">
+<p>Недвижимость<span> #{{text[0]}}</span></p>
+</div>
+<div class="houseblock">
+<div class="door">
+<div class="lock" v-if="text[6] === 'Закрыты'"><img src="images/lock.png" alt=""> Закрыто</div>
+<div class="lock" v-if="text[6] === 'Открыты'"><img src="images/unlock.png" alt=""> Открыто</div>
+</div>
+</div>
+<div class="houseblock">
+<p>Владелец:<span>{{text[5]}}</span></p>
+</div>
+<div class="houseblock">
+<p>Класс:<span>{{text[1]}}</span></p>
+</div>
+<div class="houseblock">
+<p>Стоимость:<span>{{text[4]}} $</span></p>
+</div>
+<div class="houseblock">
+<p>Гараж:<span>{{text[2]}} мест</span></p>
+</div>
+<div class="houseblock">
+<p>Жильцов:<span>{{text[3]}} человек</span></p>
+</div>
+</div>
+
+<div class="btns nocup" v-if="style === 1">
+<div class="buy" id="buy" onclick="housemenu.buy()">Купить</div>
+<div class="interior" id="check" onclick="housemenu.check()">Посмотреть</div>
+<div class="exit" id="cancel" onclick="housemenu.exit()">Выйти</div>
+</div>
+<div class="btns cup" v-if="style === 0">
+<div class="interior" id="enter" onclick="housemenu.enter()">Войти</div>
+<div class="interior" id="enter" onclick="housemenu.garageEnter()">Гараж</div>
+<div class="exit" id="cancel" onclick="housemenu.exit()">Выйти</div>
+</div>
+</div>
+</div>
+
+<div class="business BizMenu" id="bizmenu" v-if="active">
+<div class="body">
+<div class="left">
+<div class="houseblock q"><p>Информация о бизнесе<span> {{data[0]}}</span></p></div>
+<div class="houseblock"><p>Владелец:<span>{{data[1]}}</span></p></div>
+<div class="houseblock"><p>Крыша:<span>{{data[2]}}</span></p></div>
+<div class="houseblock"><p>Стоимость:<span>{{data[3]}} $</span></p></div>
+<div class="houseblock"><p>Налог в сутки:<span>{{data[4]}} $</span></p></div>
+<div class="houseblock"><p>Доход в сутки:<span>{{data[5]}} $</span></p></div>
+<div class="houseblock"><p>Материалов в сутки:<span>{{data[6]}} шт.</span></p></div>
+</div>
+<div class="btns nocup">
+<div class="buy" id="buy" v-if="data[1] == 'Государство'" @click="buy">Купить</div> <!--активна когда бизнес в государстве-->
+<div class="exit" id="cancel" @click="close">Выйти</div>
+</div>
+</div>
+</div>
+
+
+
+ <div class="LicMenu" v-if="active">
+ <div class="exit" id="cancel" onclick="licmenu.exit()"><i class="fas fa-times"></i></div>
+        <div class="header">Приобрести компанию</div>
+        <div class="content">
+			<p><span class="nm">Лицензия "Грузоперевозки"</span> <span class="pr">Цена: 2 000 000$</span><span class="enter" onclick="licmenu.enter()">Купить</span></p>
+			<!--p style="pointer-events: none;"><span class="nm">Лицензия "Частное такси"</span> <span class="pr">Цена: временно недоступно</span><span class="enter" onclick="">Купить</span></p>
+			<p style="pointer-events: none;"><span class="nm">Лицензия "Быстро Займ"</span> <span class="pr">Цена: временно недоступно</span><span class="enter" onclick="">Купить</span></p>
+			<p style="pointer-events: none;"><span class="nm">Лицензия "ЧОП"</span> <span class="pr">Цена: временно недоступно</span><span class="enter" onclick="">Купить</span></p>
+			<p style="pointer-events: none;"><span class="nm">Лицензия "Своя семья"</span> <span class="pr">Цена: временно недоступно</span><span class="enter" onclick="">Купить</span></p-->
+		</div>	
+        
+    </div>
+	
+
+<div class="JobStatsInfo" v-if="active">       
+        <div class="naq">
+		<div class="na">Заработано</div>
+            <p>{{money}}$</p>
+        </div>
+    </div>	
+
+<div class="death_window" v-if="active">
+<div class="loading">
+  <svg version="1.2" height="50vh" width="100vh" viewport="0 0 60 60">
+    <path id="pulsar" stroke="#a50000" fill="none" stroke-width="1"stroke-linejoin="round" d="M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" />     
+</svg>
+</div>
+<div id="death_window">
+        <div class="text_block">{{title}}</div>
+		<div class="desc">{{nones}}</div>
+        <div class="time" id="death_window_time">{{time}}</div>
+        <div class="desc">осталось до смерти</div>
+        <div class="death_window_buttons" id="death_window_buttons_div" v-if="buttonact" >
+            <div class="death_window_button" id="death_window_first_button" @click="yes"></div>
+            <div class="death_window_button two" id="death_window_second_button" @click="no"></div>
+        </div>
+</div>
+ </div>	
+	
+	
+<div class="control" style="display: none">
+        <p>Поворот</p><output id="rotate">0</output>
+        <input id="rotate" type="range" value="0" step="1" min="0" max="360">        
+        <p>Высота</p><output id="height">0</output>
+        <input id="height" type="range" value="0" step="0.1" min="-0.7" max="0.7">       
+        <p>Дальность</p><output id="depth">0</output>
+        <input id="depth" type="range" value="1" step="0.1" min="0.5" max="1.5">       
+</div>	
+	
+	
+	<div class="infos" v-if="active">
+		<div class="header">{{answermy}}</div>
+		<div class="content"><div class="yes" v-on:click="answer()">Согласиться</div><div class="no" v-on:click="hide()">Отказаться</div>	</div>
+	</div>
+	
+	<div class="remote" v-if="active">
+		<div class="autoname">{{namecar}}</div>
+		<div class="autolock" v-on:click="interact(1)">Открыть / Закрыть</div>
+		<div class="autokey"  v-on:click="interact(2)">Запустить двигатель</div>
+		<div class="autokey1" v-on:click="interact(3)">Багажник</div>
+		<div class="autokey2" v-on:click="interact(4)">Капот</div>
+		<div class="autokey3" v-on:click="interact(5)">Двери</div>
+		<div class="autokey4" v-on:click="interact(6)"></div>
+	</div>
+   
+   
+   <div class="kpz" v-if="active">
+   <h2>{{title}}</h2>
+   <div class="stat">Указать статью: <input type="text" v-model="input"></div>
+   <div class="srok">Указать срок: <input type="text" v-model="time"></div>
+   <div class="bbt">
+   <div class="pos" @click="yes">Посадить</div>
+   <div class="unpos" @click="no">Отменить</div>
+   </div>
+   </div>
+   
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/dial.js"></script>
+    <script src="js/stock.js"></script>
+    <script src="js/pc.js"></script>
+    <script src="js/docs.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/joblist.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/atm.js"></script>
+    <script src="js/lift.js"></script>
+    <script src="js/petrol.js"></script>
+    <script src="js/fmenu.js"></script>
+    <script src="js/plist.js"></script>
+    <script src="js/mats.js"></script>
+    <script src="js/auto.js"></script>
+	<script src="js/air.js"></script>
+	<script src="js/detail_auto.js"></script>
+	<script src="js/pet.js"></script>
+    <script src="js/bsearch.js"></script>
+    <script src="js/body.js"></script>
+    <script src="js/weapons.js"></script>
+    <script src="js/clothes.js"></script>
+	<script src="js/premclothes.js"></script>
+    <script src="js/masks.js"></script>
+    <script src="js/infobox.js"></script>
+    <script src="js/donate.js"></script>
+    <script src="js/dialog.js"></script>
+	
+	<script src="js/info.js"></script>
+	<script src="js/housemenu.js"></script>
+	<script src="js/licmenu.js"></script>
+	<script src="js/JobsMenus.js"></script>
+	<script src="js/death.js"></script>
+	<script src="js/rangeslider.min.js"></script>
+	<script src="js/cam.js"></script>
+	<script src="js/vehmanage.js"></script>
+	<script src="js/kpz.js"></script>
+	<script src="js/biz.js"></script>
+</body>
+</html>

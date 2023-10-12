@@ -1,0 +1,421 @@
+.weapons_buy{
+    height: 46vh;
+    right: 1vh;
+    /* width: 62vh; */
+    margin: 0 auto;
+    top: 25%;
+    font-family: "TT Norms",sans-serif;
+    position: absolute;
+    text-align: center;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #fff;
+    border-radius: 0;
+    background: rgb(34 33 35 / 0.55);
+}
+.weapons_craft{
+    /* height: 46vh; */
+    right: 1vh;
+    /* width: 62vh; */
+    margin: 0 auto;
+    top: 25%;
+    font-family: "TT Norms",sans-serif;
+    position: absolute;
+    text-align: center;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #fff;
+    border-radius: 0;
+    background: rgb(34 33 35 / 0.55);
+}
+.weapons_craft h1 {
+    position: relative;
+    top: 0;
+    font-size: 3vh;
+    font-weight: 500;
+    display: block;
+    padding: 2vh;
+    background: rgb(34 33 35 / 0.54);
+    text-align: left;
+}
+
+.weapons_buy .left,
+.weapons_craft .left{
+    display: block;
+    float: left;
+    width: 10vh;
+    height: 38vh;
+    color: white;
+    /* background-color: #1b9500; */
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 0;
+    padding-left: 1vh;
+    float: left !important;
+}
+.weapons_buy .left {
+    display: none;
+}
+.weapons_buy #btn4 {
+    color: #000;
+}
+.weapons_buy .slider span button:last-child {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    border: 0px solid;
+    background-image: linear-gradient(0deg, rgb(0 78 115) 0%, rgb(1 158 234) 100%);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.41), inset 0px 2px 3px 0px rgba(255, 255, 255, 0.1);
+    line-height: 16px;
+    padding-top: 5px;
+    width: 22px;
+    cursor: pointer;
+}
+.weapons_buy .slider span button:first-child {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    border: 0px solid;
+    background-image: linear-gradient(0deg, rgb(0 78 115) 0%, rgb(1 158 234) 100%);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.41), inset 0px 2px 3px 0px rgba(255, 255, 255, 0.1);
+    line-height: 10px;
+    padding-top: 7px;
+    width: 22px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+}
+.weapons_craft .left{/* background-color: #1b9500; */background: rgb(34 33 35 / 0.54);border-radius: 0;padding-right: 1vh;height: 48vh;width: 18vh;}
+.weapons_buy .left .btn,
+.weapons_craft .left .btn{
+    display: block;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 4vh;
+    cursor: pointer;
+    border-radius: 0;
+    margin-bottom: 1vh;
+    background-size: 2vh;
+    border-radius: 0.5vh;
+    background-position: 1vh center;
+    text-align: center;
+    padding: 1vh 0;
+}
+.shot {}
+
+.weapons_buy .left .btn:hover{background-color: #0090df;}
+.weapons_buy .left .btn.active{ background-color: #0090df; }
+.weapons_buy .left .btn.active:hover{ background-color: #0090df; }
+.weapons_craft .left .btn:hover{background-color: rgb(57 114 144);background-size: 3vh;border-radius: 0.5vh;background-size: 2vh;border-radius: 0.5vh;background-position: 1vh center;text-align: center;padding: 1vh 0;}
+.weapons_craft .left .btn.active{background-color: rgb(57 114 144);background-size: 2vh;border-radius: 0.5vh;background-position: 1vh center;text-align: center;padding: 1vh 0;}
+.weapons_craft .left .btn.active:hover{background-color: rgb(57 114 144);}
+.weapons_buy .right{
+    float: left;
+    background-color: #0090df;
+    height: 38vh;
+    border-top-right-radius: 4vh;
+    border-bottom-right-radius: 4vh;
+    width: 32vh;
+    padding-top: 2vh;
+}
+.weapons_craft .right{
+    float: left;
+    height: auto;
+    width: 32vh;
+    padding-top: 2vh;
+}
+.weapons_craft .right{
+}
+.weapons_buy .head,
+.weapons_craft .head{
+    /* background-image: url('../images/res/weap/buys.png'); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 357px;
+    display: none;
+}
+.weapons_craft .head{
+    /* background-image: url('../images/res/weap/crafts.png'); */
+}
+.weapons_buy .head h1,
+.weapons_craft .head h1{
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14pt;
+    padding: 10px;
+    font-weight: 400;
+}
+.weapons_buy .elements{
+    height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.weapons_craft .elements{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.weapons_buy .pistol,
+.weapons_craft .pistol{
+    margin-top: 2vh;
+    background-image: url('../images/res/weap/pistol.png');
+    background-size: 35px;
+}
+.weapons_buy .ammo {
+    margin-top: 50px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.41), inset 0px 2px 3px 0px rgba(255, 255, 255, 0.1) !important;
+    width: 7vh !important;
+    background-image: url(../images/res/weap/ammo.png) !important;
+    background-color: #0070a6;
+    padding: 2.5vh 0 !important;
+    background-position: center;
+    display: inline-block;
+    margin-top: 0;
+    background-size: 2vh !important;
+    }
+.weapons_buy .pistol {
+    margin-top: 50px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.41), inset 0px 2px 3px 0px rgba(255, 255, 255, 0.1) !important;
+    width: 7vh !important;
+    background-image: url(../images/res/weap/pistol.png) !important;
+    background-color: #0070a6;
+    padding: 2.5vh 0 !important;
+    background-position: center;
+    display: inline-block;
+    margin-top: 0;
+    background-size: 2vh;
+    margin-right: 1vh;
+    }
+
+.weapons_buy .shot,
+.weapons_craft .shot{
+    background-image: url('../images/res/weap/shot.png');
+    background-size: 50px;
+    display: none !important;
+}
+.weapons_buy .smg,
+.weapons_craft .smg
+{background-image: url('../images/res/weap/smg.png');display: none !important;}
+.weapons_buy .rifles,
+.weapons_craft .rifles{
+    background-image: url('../images/res/weap/rifles.png');
+    background-size: 50px;
+    display: none !important;
+}
+.weapons_buy .knife,
+.weapons_craft .knife{
+    background-image: url('../images/res/weap/knife.png');
+    background-size: 50px;
+}
+.weapons_buy .ammo,
+.weapons_craft .ammo {
+    background-image: url('../images/res/weap/ammo.png');
+    background-size: 50px;
+}
+.weapons_buy .smg {
+    display: none !important;
+}
+.weapons_buy .shot {
+    background-image: url(../images/res/weap/knife.png);
+    display: none !important;
+}
+
+
+.weapons_buy .biznes {
+    background: #ffffffd9;
+    max-width: 100%;
+    border-left: 80px solid #ff3f56 !important;
+    padding-top: 20px;
+    border-bottom-left-radius: 15px;
+}
+.weapons_buy .buttons,
+.weapons_craft .buttons{
+    height: 6vh;
+    border-bottom-right-radius: 2vh;
+    position: relative;
+    top: 3vh;
+    left: 1vh;
+}
+.weapons_buy .buttons div,
+.weapons_craft .buttons div{
+    padding: 11px;
+    font-size: 2vh;
+    width: 13vh;
+    text-align: center;
+    background-image: linear-gradient(0deg, rgb(0 78 115) 0%, rgb(1 158 234) 100%);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.41), inset 0px 2px 3px 0px rgba(255, 255, 255, 0.1);
+}
+.weapons_buy .exit {}
+.weapons_buy .buttons div {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 1vh;
+    right: 0;
+}
+.weapons_buy .exit {float: right !important;}
+
+.weapons_buy .exit,
+.weapons_craft .exit{
+    float: left;
+    color: #b63f3f;
+    border-top: 2px solid #b63f3f;
+    border-right: 2px solid #b63f3f;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+.weapons_buy .exit:hover{
+    background-color: #b63f3f;
+    color:white;
+}
+.weapons_buy .block,
+.weapons_craft .block{
+    display: flow-root;
+    padding: 1vh;
+}
+.weapons_buy .block label{
+    float: left;
+    padding: 0vh;
+    font-size: 1.5vh;
+    margin-top: 0.8vh;
+}
+.weapons_craft .block label{
+    float: left;
+    padding: 0vh;
+    font-size: 1.5vh;
+    margin-top: 0;
+    padding: 1vh;
+    font-weight: 600;
+}
+
+.weapons_buy .block .btn,
+.weapons_craft .block .btn{
+    float: right;
+    padding: 5px;
+    color: green;
+    border: 2px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.weapons_buy .block .btn:hover,
+.weapons_craft .block .btn:hover{
+    /* background-color: green; */
+    /* color:white; */
+}
+.weapons_buy .block span{
+    float: left;
+    width: 100%;
+    padding-left: 5px;
+    color: green;
+}
+.weapons_craft .block span{
+    float: left;
+    /* width: 100%; */
+    padding-left: 0;
+    color: white;
+    padding: 1vh;
+}
+.weapons_buy .slider,
+.weapons_craft .slider{
+	height: 6vh;
+	text-align: center;
+	margin-top: 1vh;
+	padding: 1vh;
+}
+.weapons_buy .slider label,
+.weapons_craft .slider label{
+	width: 100%;
+	display: block;
+	text-align: left;
+	margin-bottom: 0.9vh;
+}
+.weapons_buy .block .btn, .weapons_craft .block .btn {
+    float: right;
+    padding: 5px;
+    color: #ffffff;
+    border: 2px solid #ff3f56;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #da0000;
+    padding: 5px 10px;
+}
+
+.weapons_craft .block .btn {
+    background-color: #fff;
+    margin: 0 0.5vh;
+    padding: 1vh;
+    font-size: 1.5vh;
+    color: #fff;
+    background: rgb(57 114 144);
+    border-radius: 0.5vh;
+    display: inline-block;
+    float: right;
+    border: none;
+    position: relative;
+    z-index: 9;
+    }
+.weapons_craft .block .btn:hover {background-color: #0098fd;}
+.weapons_buy .slider input,
+.weapons_craft .slider input{
+	display: inline;
+	float: left;
+}
+.weapons_buy .slider output {
+	display: inline;
+	font-size: 14pt;
+	float: right;
+	margin-right: 10px;
+	background-color: #59ff2f;
+	padding: 5px;
+	border-radius: 5px;
+}
+.weapons_craft .slider output{
+	display: inline;
+	font-size: 14pt;
+	float: right;
+	margin-right: 10px;
+	background-color: rgb(57 114 144);
+	padding: 5px;
+	border-radius: 5px;
+}
+.raz {
+  all: unset;
+  -moz-appearance: textfield;
+  width: 3em;
+  text-align: center;
+}
+.raz::-webkit-inner-spin-button { 
+  display: none;
+}
+.weapons_craft .exit {
+    font-style: normal;
+    cursor: pointer;
+    border-radius: 0;
+    font-size: 2.5vh;
+    top: 2vh;
+    right: 2vh;
+    font-weight: 600;
+    position: absolute;
+    color: #fff;
+    margin: 0;
+    text-align: right;
+    bottom: inherit;
+    background: #0092dea8;
+    box-shadow: inherit;
+    padding: 0.2vh 0.3vh;
+    float: inherit;
+    border: none;
+}

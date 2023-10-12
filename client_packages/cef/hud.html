@@ -1,0 +1,178 @@
+﻿<html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.min.css">
+<link rel="stylesheet" href="css/hud/style.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" type="text/css" href="css/capt.css">
+
+
+<body>
+    <div class="player_hud" v-if="show">
+        <div class="logoBlock">
+            <div class="logo">
+                <img src="images/player_hud/logo.png" alt="">
+            </div>
+            <div class="info">
+                <div class="title_server">FiveUP RolePlay</div>
+                <div class="datetime">{{time}} - {{date}}</div>
+                <div class="money">${{money}}</div>
+                <div class="bank">${{bank}}</div>
+            </div>
+            <div class="online">
+                <img src="images/player_hud/online_elipse.png" alt="">
+                <div class="count">{{online}}</div>/{{maxOnline}}
+            </div>
+			<div class="id">
+                ID: <div class="value">{{id}}</div>
+            </div>
+        </div>
+        <div class="statsBlock" v-if="eats">
+            <div class="stats">
+                <img src="images/player_hud/water.png" alt="" class="icon">
+                <div class="info">
+                    <div class="title">
+                        Ваша жажда
+                        <div class="value">{{water}}%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="value" style="width: 50%;" :style="{width: water + '%'}"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats">
+                <img src="images/player_hud/hungert.png" alt="" class="icon">
+                <div class="info">
+                    <div class="title">
+                        Ваш голод
+                        <div class="value">{{hunger}}%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="value" :style="{width: hunger + '%'}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ammo" v-if="ammo > 0">
+            <div class="ammo_count">
+                <div class="count">{{ammo}}</div>
+
+            </div>
+            <img src="images/player_hud/pistol.png" alt="">
+        </div>
+        <div class="help_block" v-if="showhelp" v-bind:class="{active: helpActive}">
+            <div class="help_title">Подсказки <div class="btn">F7</div></div>
+            <div class="list_help">
+				<div class="line_help">Микрофон<div class="btn">X</div></div>
+                <div class="line_help">Рестарт микрофона<div class="btn">F3</div></div>
+                <div class="line_help">Рестарт интерфейса<div class="btn">F6</div></div>
+                <div class="line_help">Информация<div class="btn">F5</div></div>
+				<div class="line_help">Палец<div class="btn">CAPS</div></div>
+				<div class="line_help">Телефон<div class="btn">↑</div></div>
+				<div class="line_help">Анимации<div class="btn">U</div></div>
+				<div class="line_help">Планшет фракции<div class="btn">P</div></div>
+				<div class="line_help">Планшет компании<div class="btn">M</div></div>
+            </div>
+        </div>
+		
+		<div v-if="!mic" class="mic " :class="{active: isVeh}">
+            <img src="images/player_hud/mic.png" alt="">
+        </div>
+		
+        <div class="location " v-if="poss" :class="{active: isVeh}">
+            <img src="images/player_hud/map.png" alt="">
+            <div class="info">
+                <div class="city">{{crossingRoad}}</div>
+                <div class="street">{{street}}</div>
+            </div>
+        </div>
+        <div class="speedBlock" v-if="isVeh && vehs">
+            <div class="big_block">
+                <img src="images/player_hud/speed.png" alt="">
+                <div class="value">{{speed}}</div>
+                КМ/Ч
+            </div>
+            <div class="line_speed"></div>
+            <div class="big_block">
+                <img src="images/player_hud/fuel.png" class="mini" alt="">
+                <div class="value">{{fuel}}</div>
+                Литров
+            </div>
+            <div class="line_speed"></div>
+            <div class="panel">
+                <div class="mini_block">
+                    <img src="images/player_hud/door.png" :class="{active: isDoors}" alt="">
+                    Двери
+                </div>
+                <div class="mini_block">
+                    <img src="images/player_hud/engine.png"  :class="{active: isEngine}" alt="">
+                    Двиг.
+                </div>
+                <div class="mini_block">
+                    <img src="images/player_hud/belt.png" class="mini" :class="{active: isBelt}" alt="">
+                    Ремень
+                </div>
+            </div>
+        </div>
+        
+		<div class="business" v-if="biz == 'a'">
+<p><span>E</span> - взаимодествие</p>
+<p><span>Q</span> - информация</p>
+</div>	
+		
+		
+    </div>
+	
+	<div v-if="active" class="bizWarInfoBlock">
+        <img src="images/capt.png" style="height: calc(50px * 0.8); width: calc(1084px * 0.8);">
+        <div class="menu-text menu-color-red b-elem">Атака</div>
+        <div class="menu-text f-m menu-color-red b-elem" style="left: 125px;">{{att}}</div>
+        <div class="menu-text menu-color-green b-elem" style="">Защита</div>
+        <div class="menu-text f-m menu-color-green b-elem" style="right: 130px;">{{def}}</div>
+       
+        
+        <div class="b-elem d-flex" style="left: 50%; transform: translateX(-50%);">
+            <div class="time-bg">
+                <span class="menu-text f-m time-char">{{min}}</span>
+                <span class="menu-text f-m time-char">{{sec}}</span>
+            </div>
+        </div>
+
+	  
+
+</div>
+
+  
+	<div class="notify_list">
+            
+    </div>
+	
+	<div id="chat" class="chat"> 
+		<ul id="chat_messages"></ul> 
+		<!--div class="text" v-if="active">
+			<span class="all">ME</span>
+			<span class="all">DO</span>
+			<span class="all">ООС</span>
+			<span class="all">Сказать</span>
+			<span class="all">Крикнуть</span>
+			<span class="all">Шепнуть</span>
+			<span class="frac">Фракция</span>
+			<span class="frac">GOV</span>
+			<span class="frac">DEP</span> 
+		</div--> 
+    </div>
+	<div id="effect"></div>	
+	
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/colorInterpolator.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/chat.js"></script>
+	<script src="js/hud.js"></script>
+	<script src="js/gangzone.js"></script>
+	
+</body>
+
+</html>
+

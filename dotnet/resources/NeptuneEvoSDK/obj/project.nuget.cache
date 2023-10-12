@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PtlqVmI5dtP8eDe87QEdo6iTRtUCMK/WiZZ4oI70prJGGDrdVtu6GixYqFXz9zELccRsQNcqiiFvmzEc3Fd9/Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Downloads\\FiveUP_ragemppro\\server\\dotnet\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\mysqlconnector\\0.65.0\\mysqlconnector.0.65.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.data.sqlite.core\\1.0.112.2\\system.data.sqlite.core.1.0.112.2.nupkg.sha512"
+  ],
+  "logs": []
+}

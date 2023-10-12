@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FiveUP RP - Auth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/noty.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/auth.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="switch-content authDiv">
+	<img src="images/logotip.png" alt="" class="logos">
+        
+		<main class="gta-acount  authorization  auth-page  show">
+		<div class="container-login100">		
+		<div class="loginform">	
+		<form class="login100-form validate-form" id="auth-form" action="" method="POST">		
+		<div class="avtorizacia">
+		<h2>Вход в аккаунт</h2>		
+		<input class="input100 log" type="text" name="entry-login" id="entry-login-id" v-model="mylogin" placeholder="Введите логин / email">
+		<input class="input100 pass" type="password" id="entry-password-id" name="entry-password" v-model="mypass" placeholder="Введите пароль">
+		<div class="text-center p-t-12 bttn" style="padding-bottom: 15px;">
+			<input class="inp-remember" id="remember" name="remember" v-model="remember" style="display: none;" type="checkbox">
+			<label class="remember" for="remember"><span><svg height="9px"viewbox="0 0 12 9" width="9px"><polyline points="1 5 4 8 11 1"></polyline></svg></span><span>Запомнить пароль</span></label>
+		<input class="login100-form-btn js-btn-auth voiti" type="submit" value="Войти">	
+		</div>
+		</div>
+		<div class="rigistracia">
+		<h2>Первый раз в штате?</h2>
+		<img src="images/pr.png" alt="">
+		<a class="login100-form-btn js-btn-register regisr" href="registration.html">Регистрация</a>
+		<a class="login100-form-btn js-btn-restore regisr" href="restorepass.html">Восстановить пароль</a>		
+		</div>
+		</form>		
+		</div>		
+		</div>
+        </main>
+		
+        <main class="gta-acount  registration  reg-page">		
+		<div class="container-login100">
+		<div class="loginform">	
+		<form class="login100-form validate-form" id="reg-form" action="" method="POST">		
+		<div class="avtorizacia">
+		<h2>Создание аккаунта</h2>	
+		<p class="logs">У Вас уже есть аккаунт? <a class="login100-form-btn js-btn-back" href="index.html">Войти</a></p>	
+		<input class="input100 mail" type="email" name="new-user__email" id="new-user__email-id" placeholder="Введите почту">
+		<input class="input100 log" type="text" name="new-user__login" id="new-user__login-id" placeholder="Введите логин">
+		<input class="input100 pass" type="password" name="new-user__pw" id="new-user__pw-id" placeholder="Введите пароль">
+		<input class="input100 pass" type="password" name="new-user__pw-repeat" id="new-user__pw-repeat-id" placeholder="Введите пароль повторно">
+		<input class="input100 promo" type="text" name="new-user__promo-code" id="new-user__promo-code" placeholder="Введите промокод">
+		<input class="login100-form-btn btn-register-end voiti" type="submit" value="Создать аккаунт">		
+		</div>
+		</form>		
+		</div>
+		</div>
+        </main>
+		
+		<main class="gta-acount reg-and-restore restorepass rest-page">		
+		<div class="container-login100">
+		<div class="loginform">	
+		<form class="login100-form validate-form" id="rest-form" action="" method="POST">		
+		<div class="avtorizacia">
+		<h2>Восстановление пароля</h2>	
+		<p class="logs">У Вас уже есть аккаунт? <a class="login100-form-btn js-btn-back" href="index.html">Войти</a></p>	
+		<input class="input100 log entry-login" type="text" name="entry-login" id="entry-login-id" placeholder="Введите логин">
+		<input class="login100-form-btn btnEnter btn-restore-end voiti" type="submit" value="Вспомнить">
+		</div>
+		</form>		
+		</div>
+		</div>
+        </main>
+		
+
+		
+
+		
+<main class="gta-acount  slots  slots-page">
+
+<div class="container-login100">
+			<div class="wrap-login100">		
+				<div class="slots__cols">
+				 <div class="slot-col  col-l  ">		
+<div class="active__wrapper  login100-form">
+<div class="login100-form ">
+<span class="login100-form-title">{{slotL[0]}} {{slotL[1]}}</span>
+                            <ul class="characteristics">
+                                <li><b>Уровень:</b><div>{{slotL[2]}}</div></li>
+                                <li><b>Exp:</b><div>{{slotL[3]}} / {{slotL[4]}} </div></li>
+                                <li><b>Фракция:</b><div>{{slotL[5]}}</div></li>
+                                <li><b>Денег на руках:</b><div> <span>{{slotL[6]}}</span> $  </div></li>
+                                <li><b>Денег на счету:</b><div> <span>{{slotL[7]}}</span> $ </div></li>
+								<li><b>Донат валюты:</b><div> <span>{{redbucks}}</span> KC </div></li>
+                            </ul>		
+                        <div class="container-login100-form-btn"><a href="#" class="btn btn-enter js-btn-enter-1 login100-form-btn">Войти</a></div>
+						<div class="container-login100-form-btn"><a href="#" class="js-delete-cancel-1  delete-cancel  login100-form-btn">Отмена</a></div>
+    </div>  
+</div>
+				
+				<div class="free__wrapper login100-form">
+				<a href="#" class="btn  create-new  js-create-new-1 login100-form-title">Создать персонажа</a>
+				
+                    <form id="create-person-1" class="login100-form" action="" method="POST">
+					<div class="wrap-input100">
+						<input class="input100" type="text" name="new-person-1__name" id="new-person-1__name-id" placeholder="Имя (только на английском)" pattern="[A-Za-z]" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100"></span>
+					</div>
+					<div class="wrap-input100">
+						<input class="input100" id="new-person-1__sername-id"  type="text" name="new-person-1__sername"  placeholder="Фамилия (только на английском)" pattern="[A-Za-z]" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100"></span>
+					</div>	
+					<div class="container-login100-form-btn"><input class="login100-form-btn js-create-person-submit-1" type="submit" value="Создать и перейти к настройке"></div>					
+                    </form>
+					<div class="container-login100-form-btn"><a href="#" class="login100-form-btn cancel  js-create-cancel-1">Отмена</a></div>	
+
+                            <div class="blocked-cont">
+                                <div class="blocked-cont__reason">
+                                    <h4>Причина:</h4>
+                                    <p>{{blockL[0]}}</p>
+                                    <h4>Забанил: &nbsp;<b>{{blockL[1]}}</b></h4>
+                                </div>
+
+                                <ul class="blocked-cont__dates">
+                                    <li>
+                                        <span>Дата бана:</span>
+                                        <time>{{blockL[2]}}</time>
+                                    </li>
+                                    <li>
+                                        <span>Дата разбана:</span>
+                                        <time class="green">{{blockL[3]}}</time>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+				 
+				 </div>	 
+				</div>
+				
+			</div>
+		</div>
+
+        </main>
+       
+	   <div class="foot">
+	   <p>FiveUP Role Play - это сервер ролевого жанра Role Play в игре GTA 5. Мы предоставляем комфортные условия игры. Поиграйте, реализуйте в персонаже собственные качества. Станьте героем или бандитом, мафиози или политиком, медиком или военным в мире
+		FiveUP Role Play.<br>Вариантов для развития бесконечное множество, потому что мы сделали системы, позволяющие очень тонко настроить вашу игру.</p>
+	   </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/notify.js"></script>
+    <script src="js/noty.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/auth.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >		$('.js-tilt').tilt({			scale: 1.1		})	</script>
+	<script src="js/main.js"></script>
+</body>
+</html>

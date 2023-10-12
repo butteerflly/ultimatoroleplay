@@ -1,0 +1,223 @@
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+D:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+F:\ARCHIVOS DE SERVIDORES\mi servidor\server-files-origin-cambios\server-files\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+c:\RedAge 1.1\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+D:\Server\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\RAGEMP\server-files\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\Users\Administrator\Desktop\FiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+D:\ВАЖНО\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+D:\VAZHNO\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\Users\Administrator\Desktop\serverFiveUP1.1\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+D:\для gta5\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\Users\user\Desktop\RAGEMP_june\fiveUPCOMLITE\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\Users\user\Desktop\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\meta.xml
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.deps.json
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvo.pdb
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.dll
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.dll
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\ServiceData.dll
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\NeptuneEvoSDK.pdb
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\bin\Debug\netcoreapp3.1\Bootstrapper.xml
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csprojAssemblyReference.cache
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.AssemblyInfo.cs
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.csproj.CopyComplete
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.dll
+C:\Users\user\Downloads\FiveUP_ragemppro\server\dotnet\resources\NeptuneEvo\obj\Debug\netcoreapp3.1\NeptuneEvo.pdb

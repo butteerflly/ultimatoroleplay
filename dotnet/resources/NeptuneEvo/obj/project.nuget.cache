@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "AKUIIcNQdfQ0x4fAgaCUcT80EWlLKecldWRrZ9QKwhmCb6mrUv9F8/aGCShRS2iPIGMoDBejoKQsuKAyrmGqqg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Downloads\\FiveUP_ragemppro\\server\\dotnet\\resources\\NeptuneEvo\\NeptuneEvo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\mysqlconnector\\0.65.0\\mysqlconnector.0.65.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.data.sqlite.core\\1.0.112.2\\system.data.sqlite.core.1.0.112.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\websocketsharp.core\\1.0.0\\websocketsharp.core.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
